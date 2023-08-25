@@ -1,13 +1,15 @@
 import pygame
 from const import *
 from board import Board
+from dragger import Dragger
 from piece import *
 
 class Game:
     def __init__(self):
         self.board = Board()
+        self.dragger = Dragger()
 
-    # show methods
+    # blit methods
 
     def show_bg(self, surface):
         for row in range(ROWS):
